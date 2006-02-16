@@ -4,3 +4,7 @@ config.status
 config.log
 libtool
 stamp-*
+libjpeg-*.tar.bz2
+libjpeg-*.tar.gz
+libjpeg-*.zip
+
