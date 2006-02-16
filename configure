@@ -2296,7 +2296,7 @@ fi
 
 # Define the identity of the package.
  PACKAGE=libjpeg
- VERSION=6b
+ VERSION=6.1.0
 
 
 cat >>confdefs.h <<_ACEOF

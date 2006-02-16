@@ -19,7 +19,7 @@ AC_CONFIG_HEADERS([jconfig.h jconfig_api.h])
 AC_CANONICAL_SYSTEM
 
 # Initialize Automake
-AM_INIT_AUTOMAKE([libjpeg], [6b])
+AM_INIT_AUTOMAKE([libjpeg], [6.1.0])
 
 # Add configure option --enable-maintainer-mode which enables dependency
 # checking and generation useful to package maintainers.  This is made an
