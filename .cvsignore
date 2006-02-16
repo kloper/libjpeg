@@ -1,0 +1,6 @@
+jconfig.h
+jconfig_api.h
+config.status
+config.log
+libtool
+stamp-*
