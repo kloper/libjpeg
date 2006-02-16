@@ -1,0 +1,11 @@
+2006-02-15  Frank Warmerdam  <warmerdam@pobox.com>
+
+	* Introduced ChangeLog file.
+
+	* modified nominal version to be 6.1.0 instead of 6b.
+
+	* Applied all Bob Friesenhahn's autoconf/automake/libtool changes.
+
+	* Committed jpeb6b from the ijg download site as the baseline.  Tagged
+	it as jpeg6b_original.
+
