@@ -66,10 +66,6 @@
 /* How to obtain function inlining. */
 #undef INLINE
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
-#undef LT_OBJDIR
-
 /* Compiler has <strings.h> rather than standard <string.h>. */
 #undef NEED_BSD_STRINGS
 
