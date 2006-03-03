@@ -47,14 +47,12 @@ subdir = .
 DIST_COMMON = README $(am__configure_deps) $(include_HEADERS) \
 	$(noinst_HEADERS) $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(srcdir)/jconfig.h.in $(srcdir)/jconfig_api.h.in \
-	$(top_srcdir)/configure INSTALL ansi2knr.1 ansi2knr.c \
-	config.guess config.sub config/config.guess config/config.sub \
+	$(top_srcdir)/configure ChangeLog INSTALL ansi2knr.1 \
+	ansi2knr.c config/config.guess config/config.sub \
 	config/depcomp config/install-sh config/ltmain.sh \
-	config/missing install-sh ltconfig ltmain.sh
+	config/missing install-sh
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
-	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
-	$(top_srcdir)/m4/ltversion.m4 $(top_srcdir)/configure.ac
+am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
@@ -725,7 +723,7 @@ distclean-tags:
 distdir: $(DISTFILES)
 	$(am__remove_distdir)
 	mkdir $(distdir)
-	$(mkdir_p) $(distdir)/config $(distdir)/m4
+	$(mkdir_p) $(distdir)/config
 	@srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`; \
 	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's|.|.|g'`; \
 	list='$(DISTFILES)'; for file in $$list; do \
