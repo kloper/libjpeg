@@ -1,3 +1,8 @@
+2009-06-21  Frank Warmerdam  <warmerdam@pobox.com>
+
+	* rdppm.c, wrppm.c: Fix byte order for 16bit pnm. Should be bigendian.
+	http://sourceforge.net/support/tracker.php?aid=2809967
+
 2006-02-25  Paul van den Berg  <paulberg@wanadoo.nl>
 
 	* created branch jpeg6b_vollbeding

@@ -250,8 +250,8 @@ get_word_gray_row (j_compress_ptr cinfo, cjpeg_source_ptr sinfo)
   bufferptr = source->iobuffer;
   for (col = cinfo->image_width; col > 0; col--) {
     register int temp;
-    temp  = UCH(*bufferptr++);
-    temp |= UCH(*bufferptr++) << 8;
+    temp  = UCH(*bufferptr++) << 8;
+    temp |= UCH(*bufferptr++);
     *ptr++ = rescale[temp];
   }
   return 1;
@@ -274,14 +274,14 @@ get_word_rgb_row (j_compress_ptr cinfo, cjpeg_source_ptr sinfo)
   bufferptr = source->iobuffer;
   for (col = cinfo->image_width; col > 0; col--) {
     register int temp;
-    temp  = UCH(*bufferptr++);
-    temp |= UCH(*bufferptr++) << 8;
+    temp  = UCH(*bufferptr++) << 8;
+    temp |= UCH(*bufferptr++);
     *ptr++ = rescale[temp];
-    temp  = UCH(*bufferptr++);
-    temp |= UCH(*bufferptr++) << 8;
+    temp  = UCH(*bufferptr++) << 8;
+    temp |= UCH(*bufferptr++);
     *ptr++ = rescale[temp];
-    temp  = UCH(*bufferptr++);
-    temp |= UCH(*bufferptr++) << 8;
+    temp  = UCH(*bufferptr++) << 8;
+    temp |= UCH(*bufferptr++);
     *ptr++ = rescale[temp];
   }
   return 1;
