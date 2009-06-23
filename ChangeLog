@@ -1,9 +1,13 @@
 2009-06-23  Frank Warmerdam  <warmerdam@pobox.com>
 
+	* jchuff.c, jdhuff.c: ensure data consumed is reflected in the source
+	structure before io calls.  
+	http://sourceforge.net/support/tracker.php?aid=2811021
+
 	* jchuff.h, jdct.h, jdhuff.h, jmemsys.h, jpegint.h, jpeglib.h: Added
 	#ifdef's to rename public API to _12 version if NEED_12_BIT_NAMES is
 	defined.
-	http://sourceforge.net/support/tracker.php?aid=2809983
+    	http://sourceforge.net/support/tracker.php?aid=2809983
 
 	* jcparam.c: add 12bit default huffman tables.
 	http://sourceforge.net/support/tracker.php?aid=2809979
