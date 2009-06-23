@@ -1,3 +1,8 @@
+2009-06-23  Frank Warmerdam  <warmerdam@pobox.com>
+
+	* jcparam.c: add 12bit default huffman tables.
+	https://sourceforge.net/tracker/?func=detail&aid=2809979&group_id=159521&atid=812162
+
 2009-06-21  Frank Warmerdam  <warmerdam@pobox.com>
 
 	* rdppm.c, wrppm.c: Fix byte order for 16bit pnm. Should be bigendian.
