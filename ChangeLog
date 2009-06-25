@@ -1,3 +1,8 @@
+2009-06-25  Frank Warmerdam  <warmerdam@pobox.com>
+
+	* jcmainct.c, jdmainct.c: Avoid using name main for variables as
+	it triggers warnings on some compilers. 
+
 2009-06-23  Frank Warmerdam  <warmerdam@pobox.com>
 
 	* jchuff.c, jdhuff.c: ensure data consumed is reflected in the source
